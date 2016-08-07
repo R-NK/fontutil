@@ -100,7 +100,6 @@ namespace fontutil
                 string file = PathUtils.GetPathWithoutExtension(textBox_tga.Text);
                 file = file.Substring(0, file.Length - 2);
                 string filename = file + ".fnt";
-                textBox_pro.Text = filename;
                 byte[] codepoint = instance1.codelink(filename, ori_path);
                 FileStream fs = new FileStream(fontarry[1], FileMode.Create);
                 BinaryWriter bw = new BinaryWriter(fs);
