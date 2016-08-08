@@ -26,6 +26,7 @@ namespace fontutil
                     string line = sr.ReadLine();
                     tablelist.Add(line);
                 }
+                tablelist.Sort();
                 listBox_font.Items.AddRange(tablelist.ToArray());
             }
         }
